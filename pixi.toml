@@ -1,0 +1,14 @@
+[project]
+channels = ["https://prefix.dev/conda-forge"]
+name = "git-bug"
+platforms = ["osx-arm64", "win-64"]
+
+[feature.broken.dependencies]
+git = "==2.48.1"
+
+[feature.working.dependencies]
+git = "==2.47.1"
+
+[environments]
+broken = ["broken"]
+working = ["working"]
